@@ -1,6 +1,6 @@
 /* Header */
 .header {
-    height: 10vh;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@
   }
   
   /* Logo */
-  img {
+  .logo-img {
     width: 100%;
     max-width: 32px;
   }

@@ -1,8 +1,7 @@
 import { Outlet, useLocation } from "react-router";
-import Navbar from "./Components/Header/Header";
-import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer";
 import { useEffect } from "react";
+import Header from "./Components/Header/Header";
 
 function App() {
   const path = useLocation();
@@ -13,7 +12,7 @@ function App() {
   }, [path]);
   return (
     <div className="App">
-      <Navbar />
+      <Header />
       <Outlet />
       <Footer />
     </div>

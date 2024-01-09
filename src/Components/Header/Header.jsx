@@ -112,7 +112,7 @@ const Header = () => {
                     : 'logo';
                 }}
               >
-                <img
+                <img className='logo-img'
                   src='./imgs/android-chrome-512x512.png'
                   alt='logo image'
                 />

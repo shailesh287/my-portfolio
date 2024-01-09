@@ -65,7 +65,6 @@ const Row = styled.div`
 
 const Col = styled.div`
   width: 100%;
-  height:120vh;
 `;
 
 const ColTitle = styled.p`

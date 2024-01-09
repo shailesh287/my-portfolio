@@ -1,7 +1,18 @@
+.intro_cont{
+    width: 90%;
+    max-width: 1030px;
+    margin: 0 auto;
+    position: absolute;
+    top: 5%;
+    left: 23%;
+   transform: translate(0% , 0%) !important
+   
+}
 .description_box{
     padding: 2em 0;
     margin: 2em 0;
     min-height: 50vh;  
+    position: relative;
 }
 @media (min-width: 768px) {
     .description_box{
@@ -26,16 +37,16 @@
   @media (max-width: 768px) {
     h1{
         font-size: 2.5em;
-
     }
   }
 
   .title{
     font-size: 1.2em;
     font-weight: 400;
+    color: #f7f2f2;
   }
   .bio{
-    color: var(--other-para-color);
+    color: #ccc;
     font-size: 0.9em;
     margin-bottom: 1em;
   }
@@ -47,7 +58,7 @@
     background-image: url(../../assets/Self_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 3px solid  var(--border-color );
+    border: 3px solid  var(--border-color);
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     height: 18rem;
     position: relative;
@@ -77,6 +88,14 @@
     }
     .description{
         margin-top: 2rem;
+        text-align: center;
+    }
+    .icon_wrapper{
+        justify-content: center;
+    }
+    .intro_cont{
+        left: 0%;
+
     }
   }
 
@@ -86,7 +105,7 @@
     margin-top: 1em;
   }
   .icon_link{
-    color: var(--para-color);
+    color:#f7f2f2;
     font-size: 1.5em;
     display: flex;
     justify-content: center;

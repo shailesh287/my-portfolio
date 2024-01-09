@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --text-color: #242222;
   --heading-color: #242222;
@@ -15,7 +19,7 @@
   --underline: #fde860;
   --shadow: 0 0 10px 2px #f4ecec6f;
   --line: #ffecec;
-  --border-color : #0f172a1a ;
+  --border-color : rgba(166,173,186,.4) ;
   box-sizing: border-box;
   
 }
@@ -23,15 +27,15 @@
 html[data-theme='dark'] {
   --text-color: #fff;
   --heading-color: #fff;
-  --bg-color: #02010e;
-  --bg-card: #181718a8;
-  --bg-img: #120f16;
+  --bg-color: #1D232A;
+  --bg-card: #2a323c;
+  --bg-img: #1D232A;
   --bg-blur: rgba(0, 0, 0, 0.2);
   --link-color: #a39e9e;
   --link-active-color: #fff;
   --link-hover-color: #fff;
   --para-color: #f7f2f2;
-  --para-gray-color: #200606;
+  --para-gray-color: #BCAFC3;
   --other-para-color: #ccc;
   --shadow: 0 0 1px 1px #121224;
   --line: #131214;

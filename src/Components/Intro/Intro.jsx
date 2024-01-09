@@ -3,19 +3,23 @@ import { FiDownload } from 'react-icons/fi';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import './intro.css'
 import "../../App.css"
+import Particle from '../Particle';
     
 const Intro = () => {
   return ( 
-    <div className='mainContainer'>
+    <div >
+       <Particle/>
       <motion.div
+      className='mainContainer'
         initial={{ opacity: 0, y: 300 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
+        
         <div className='description_box'>
           <div className='self_img'></div>
           <div className='description'>
-            <h1>Shailesh Bind</h1>
+            <h1 className='text-[#fff]'>Shailesh Bind</h1>
             <p className='title'>Frontend Developer</p>
             <p className='bio'>
               Passionate about Technoloy and Startups | Life long learner

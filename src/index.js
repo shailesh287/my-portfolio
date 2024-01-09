@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import { AppContextProvider } from "./Components/Context/AppContext";
+import Projects from "./Pages/Projects";
+import Contact from "./Pages/Contact/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -18,7 +20,14 @@ const appRouter = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      {},
+      {
+        path: "projects",
+        element: <Projects />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
     ],
   },
 ]);
