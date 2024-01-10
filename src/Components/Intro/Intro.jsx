@@ -4,6 +4,7 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import './intro.css'
 import "../../App.css"
 import Particle from '../Particle';
+import resume from  "../../assets/Shailesh-Resume.pdf"
     
 const Intro = () => {
   return ( 
@@ -24,7 +25,7 @@ const Intro = () => {
             <p className='bio'>
               Passionate about Technoloy and Startups | Life long learner
             </p>
-            <a className='highlightedLink'  target='_blank'>
+            <a className='highlightedLink' href={resume} target='_blank'>
               Download Resume <FiDownload />
             </a>
             <div className='icon_wrapper'>
@@ -32,7 +33,7 @@ const Intro = () => {
                 <BsGithub />
               </a>
               <a className='icon_link'
-                href='https://www.linkedin.com/in/shailesh-bind-48ba93238'
+                href='https://www.linkedin.com/in/shaileshbind23'
                 target='_blank'
               >
                 <BsLinkedin />

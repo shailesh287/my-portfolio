@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Container } from '../globalStyle';
 import { AiFillHeart } from 'react-icons/ai';
+import "../App.css"
 
 const Footer = () => {
   return (
-    <Container>
+    <div className='w-ful' >
+      <div className='mainContainer'>
+
+
       <FooterWrapper>
         <Row>
           <Col>
@@ -15,12 +18,12 @@ const Footer = () => {
               Github
             </SiteLink>
             <SiteLink
-              href='https://www.linkedin.com/in/shailesh-bind-48ba93238'
+              href='https://www.linkedin.com/in/shaileshbind23'
               target='_blank'
             >
               LinkedIn
             </SiteLink>
-            <SiteLink href='https://twitter.com/DineshRout779' target='_blank'>
+            <SiteLink href='https://x.com/Shailesh280?t=nRN5WhJwKvgEz-EWS3Yh6Q&s=09' target='_blank'>
               Twitter
             </SiteLink>
           </Col>
@@ -43,7 +46,8 @@ const Footer = () => {
           Shailesh Bind
         </a>
       </Attribution>
-    </Container>
+      </div>
+    </div>
   );
 };
 export default Footer;

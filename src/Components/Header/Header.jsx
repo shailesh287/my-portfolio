@@ -17,7 +17,6 @@ const Header = () => {
   const mobileMenuRef = useRef();
   const [bgBlur, setBgBlur] = useState(false);
 
-  const headerClass = `header ${bgBlur ? 'bg-blur' : ''}`;
   const handleThemeToggle = () => {
     dispatch({
       type: 'TOGGLE_THEME',
@@ -56,7 +55,7 @@ const Header = () => {
   return (
     <div className={`header ${bgBlur ? 'bgBlurStyles' : ''}`}>
       <ScrollIndicator />
-      <div className='mainContainer'>
+      <div className='w-full px-10'>
         <nav className='nav_container' >
           <button className='mobileMenu' onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <IoMdClose /> : <HiOutlineMenuAlt2 />}
@@ -112,10 +111,7 @@ const Header = () => {
                     : 'logo';
                 }}
               >
-                <img className='logo-img'
-                  src='./imgs/android-chrome-512x512.png'
-                  alt='logo image'
-                />
+             <span className='font-bold text-[--heading-color] text-xl'>Shailesh.Dev</span>
               </NavLink>
             </li>
             <li>
@@ -139,20 +135,8 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-          <div className='toggle'>
-            <input
-              type='checkbox'
-              name='checkbox'
-              id='checkbox'
-              className='theme-checkbox'
-              checked={theme === 'dark'}
-              onChange={handleThemeToggle}
-            />
-            <label htmlFor='checkbox' className='theme-label'>
-              <div className='ball'></div>
-              <BsMoon />
-              <BsSun />
-            </label>
+          <div className='toggle cursor-pointer'  onClick={handleThemeToggle}>
+           {theme === "light" ?  <BsSun /> :  <BsMoon />}
           </div>
         </nav >
       </div>

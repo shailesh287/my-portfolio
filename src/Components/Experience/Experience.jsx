@@ -5,38 +5,20 @@ import "./experience.css"
 const data = [
   {
     id: 1,
-    company: 'Cryptonaukri',
-    role: 'Software Developer Intern',
-    fromDate: new Date('2022-04-04'),
-    toDate: new Date('2022-07-04'),
+    company: 'Transerve Technologies Pvt. Ltd.',
+    role: 'Front-End Developer',
+    fromDate: new Date('2022-06-07'),
+    toDate: new Date('2023-10-31'),
     tasks: [
-      'Built an QnA forum application',
-      'Worked extensively on React.js and TailwindCSS',
-      'Built User Interfaces, fixed bugs, and integrated APIs',
-      'Collaborated with backend and UI Developers',
-    ],
-  },
-  {
-    id: 2,
-    company: 'IIT Delhi',
-    role: 'Full-stack Developer',
-    fromDate: new Date('2022-08-24'),
-    toDate: new Date('2022-10-24'),
-    tasks: [
-      'Managed an Annotation Tool that visualizes annotators’ behavior based on word complexity',
-      'Technologies worked on: React, Node.js, Express, and MongoDB',
-      'Optimized the code, fixed bugs, built and integrated APIs.',
-    ],
-  },
-  {
-    id: 3,
-    company: 'CollegeToppr',
-    role: 'Software Developer Intern',
-    fromDate: new Date('2022-11-07'),
-    toDate: new Date('2023-05-07'),
-    tasks: [
-      'Built more than 30+ client projects from landing pages to full-stack web applications',
-      'Worked on Reactjs, Node.js, Express, MongoDB, Tailwindcss, and Graphql',
+    '  Spearheaded security risk assessment, reducing potential data breaches by 40%.',
+'Integrated socket services for real-time data communication, enhancing system responsiveness by 30%.',
+'Collaborated on web app enhancements, resulting in a 20% improvement in overall system performance.',
+'Implemented RxJs and advanced services, optimizing data handling for a 25% reduction in processing time.',
+'Engineered streamlined form validation, reducing user input errors by 50% and improving interactions.',
+'Troubleshooted and resolved bugs, ensuring a flawless user experience with a 40% reduction in reported issues.',
+'Developed a state-tailored Fecal Sludge Management solution, migrating to Vuexy template for enhanced efficiency.',
+'Boosted system performance with dynamic lazy loading, ReactLeaflet integration, and Chart.js for data visualization.',
+'Proficient in i18Next library for multi-lingual support and localization.'
     ],
   },
 ];
@@ -79,9 +61,10 @@ const Experience = () => {
             .sort((a, b) => b.fromDate.getTime() - a.fromDate.getTime())
             .map((ex) => (
               <li className='timeLineItem' key={ex.id}>
-                <div className='experience_header'>
+                <div className='mb-2'>
+                  <div className='experience_header'>
                   <h3>
-                    {ex.role}, {ex.company}
+                    {ex.company}
                   </h3>
 
                   <small style={{opacity:'0.8'}}>
@@ -96,8 +79,10 @@ const Experience = () => {
                     {monthDiff(ex.fromDate, ex.toDate) > 1 ? 'Months' : 'Month'}
                     )
                   </small>
+                  </div>
+                  <h4 className='mt-[-10px] '>{ex.role}</h4>
                 </div>
-
+                
                 <ul className='task_list'>
                   {ex.tasks.map((task, i) => (
                     <li key={i}>{task}</li>

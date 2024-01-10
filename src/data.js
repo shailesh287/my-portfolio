@@ -138,12 +138,24 @@ const skills = [
     title: "Redux",
   },
   {
+    icon: "angular",
+    title: "Angular",
+  },
+  {
+    icon: "rxjs",
+    title: "RxJs",
+  },
+  {
     icon: "tailwindcss",
     title: "TailwindCSS",
   },
   {
     icon: "bootstrap",
     title: "Bootstrap",
+  },
+  {
+    icon: "material",
+    title: "Material UI",
   },
   {
     icon: "firebase",
@@ -168,6 +180,10 @@ const skills = [
   {
     icon: "webpack",
     title: "Webpack",
+  },
+  {
+    icon: "socket-io",
+    title: "Socket.IO",
   },
 ];
 

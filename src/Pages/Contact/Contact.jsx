@@ -5,12 +5,12 @@ import "./contact.css"
 const contactIcons = [
   {
     url: './icons/gmail.svg',
-    linkTo: 'mailto:rddinesh779@example.co',
+    linkTo: 'mailto:shaileshbind28@gmail.com',
     altText: 'gmail',
   },
   {
     url: './icons/linkedin.svg',
-    linkTo: 'https://www.linkedin.com/in/dineshrout7/',
+    linkTo: 'https://www.linkedin.com/in/shaileshbind23',
     altText: 'linkedin',
   },
 ];
@@ -47,8 +47,7 @@ const Contact = () => {
           <h1 className='c_heading'>Contact</h1>
 
           <p className='c_text'>
-            I'm currently looking for frontend internships at startups. Have an
-            opening? Please reach out to me.
+            I am actively seeking opportunities in frontend development. If you have any openings, I would greatly appreciate it if you could reach out to me.
           </p>
 
           <motion.div className='icons_cont' variants={container} initial='hidden' animate='visible'>

@@ -45,7 +45,7 @@
   }
 
 .task_list{
-    list-style-type: circle;
+    list-style-type: disc;
 }
 .task_list li {
     color: var(--para-gray-color);
