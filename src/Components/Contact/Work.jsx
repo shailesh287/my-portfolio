@@ -19,10 +19,9 @@ const Work = () => {
     <div className="mainContainer">
   <div className="w_cont">
     <div className="w_text_cont">
-      <h1 className="w_heading">Looking for a Freelance Front-End Developer?</h1>
+      <h1 className="w_heading">Need a talented Front-End Developer?</h1>
       <p className="w_text">
-        I'm a Front-End Developer eager to tackle freelance projects. Let's
-        collaborate on something awesome! 🚀
+       I'm here to tackle projects and turn ideas into reality. Let's build something exceptional! 🚀
       </p>
       <div className="w_icon_cont">
         {contactIcons.map((icon, i) => (

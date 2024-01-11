@@ -5,10 +5,8 @@ import "../App.css"
 
 const Footer = () => {
   return (
-    <div className='w-ful' >
-      <div className='mainContainer'>
-
-
+    <Background>
+      <Container>
       <FooterWrapper>
         <Row>
           <Col>
@@ -38,7 +36,7 @@ const Footer = () => {
       </FooterWrapper>
       <Attribution>
         Made with <AiFillHeart color='red' /> by{' '}
-        <a
+        <a className='text-[#fff]'
           href='https://github.com/shailesh287'
           rel='noreferrer'
           target='_blank'
@@ -46,15 +44,26 @@ const Footer = () => {
           Shailesh Bind
         </a>
       </Attribution>
-      </div>
-    </div>
+      </Container>
+    </Background>
   );
 };
 export default Footer;
 
+const Background = styled.div`
+border-top: 1px solid #ffecec;
+width:100%;
+background-color:#181E24;
+padding-bottom: 1em;
+`;
+const Container = styled.div`
+width: 90%;
+max-width: 1030px;
+margin: 0 auto;
+`;
+
 const FooterWrapper = styled.footer`
-  border-top: 1px solid var(--line);
-  padding: 2em 0;
+  padding: 2em 0 0 0;
 `;
 
 const Row = styled.div`
@@ -74,19 +83,23 @@ const Col = styled.div`
 const ColTitle = styled.p`
   font-size: 1.2em;
   margin-bottom: 0.5em;
+  color:#fff
 `;
 
 const SiteLink = styled.a`
+  color: #a39e9e;
   display: block;
   width: fit-content;
   text-decoration: none;
   margin: 0.5em 0;
+  color:#a39e9e
   :hover {
     opacity: 0.8;
   }
 `;
 
 const SiteRouterLink = styled(Link)`
+  color: #a39e9e;
   display: block;
   width: fit-content;
   text-decoration: none;
@@ -97,7 +110,7 @@ const SiteRouterLink = styled(Link)`
 `;
 
 const Attribution = styled.div`
-  margin: 2em 0;
+  color: #fff;
   margin-top: 0;
   display: flex;
   align-items: center;

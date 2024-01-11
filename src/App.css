@@ -6,13 +6,6 @@
   margin: 0 auto;
 }
 
-/* Nav */
-.nav_container {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
 /* NavLinks */
 .main_navLink {
   display: flex;

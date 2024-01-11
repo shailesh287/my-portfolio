@@ -55,7 +55,7 @@ const Header = () => {
   return (
     <div className={`header ${bgBlur ? 'bgBlurStyles' : ''}`}>
       <ScrollIndicator />
-      <div className='w-full px-10'>
+      <div className='w-full md:px-10 px-5'>
         <nav className='nav_container' >
           <button className='mobileMenu' onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <IoMdClose /> : <HiOutlineMenuAlt2 />}
@@ -99,20 +99,15 @@ const Header = () => {
               </NavLink>
             </li>
           </nav>
-          <ul className='main_navLink'>
-            <li>
-              <NavLink
-                to='/'
-                className={({ isActive, isPending }) => {
-                  return isActive
-                    ? 'active logo'
-                    : isPending
-                    ? 'pending logo'
-                    : 'logo';
-                }}
-              >
+          <NavLink  to='/' >
              <span className='font-bold text-[--heading-color] text-xl'>Shailesh.Dev</span>
               </NavLink>
+      
+          <ul className='main_navLink'>
+            <li>
+            <div className='toggle cursor-pointer mx-16'  onClick={handleThemeToggle}>
+           {theme === "light" ?  <BsSun /> :  <BsMoon />}
+          </div>
             </li>
             <li>
               <NavLink
@@ -135,9 +130,7 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-          <div className='toggle cursor-pointer'  onClick={handleThemeToggle}>
-           {theme === "light" ?  <BsSun /> :  <BsMoon />}
-          </div>
+         
         </nav >
       </div>
     </div>

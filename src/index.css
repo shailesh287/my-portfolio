@@ -5,9 +5,9 @@
 :root {
   --text-color: #242222;
   --heading-color: #2d2e32;
+  --bg-img:#ffff;
   --bg-color: rgb(255, 255, 255);
   --bg-card: rgba(255, 255, 255, 0.48);
-  /* --bg-img: url('./assets/bg.jpg') no-repeat center center; */
   --bg-blur: rgba(255, 255, 255, 0.2);
   --link-color: #333;
   --link-active-color: #2563eb;
@@ -15,7 +15,7 @@
   --para-color: #111;
   --para-gray-color: #3c3838;
   --other-para-color: #534e4e;
-  --accent-blue: #10426E;
+  --accent-blue: #0077B5;
   --underline: #fde860;
   --shadow: 0 0 10px 2px #f4ecec6f;
   --line: #adabab;
@@ -56,7 +56,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);

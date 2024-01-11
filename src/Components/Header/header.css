@@ -16,18 +16,17 @@
     border-bottom: 1px solid var(--border-color);
   }
   
-  .header .bgBlur .dark {
-    border-bottom: 1px solid #e4e8ec1a;
-  }
-  
-  .header .bgBlur .light {
-    border-bottom: 1px solid #0f172a1a;
-  }
   
   /* Logo */
   .logo-img {
     width: 100%;
     max-width: 32px;
+  }
+  
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
   }
   
   /* HamburgerMenu */
@@ -62,6 +61,7 @@
     backdrop-filter: blur(10px);
     display: none;
     padding: 0 5%;
+    margin-top: -24px;
   }
   
   .mobile_nav.open {

@@ -13,6 +13,11 @@ const contactIcons = [
     linkTo: 'https://www.linkedin.com/in/shaileshbind23',
     altText: 'linkedin',
   },
+  {
+    url:"./icons/twitter.svg",
+    linkTo:"https://x.com/Shailesh280?t=nRN5WhJwKvgEz-EWS3Yh6Q&s=09",
+    altText:'twitter',
+  }
 ];
 
 const container = {
@@ -38,13 +43,13 @@ const item = {
 const Contact = () => {
   return (
     <div className='mainContainer'>
-      <div className='contact_cont'
+      <motion.div className='contact_cont'
         initial={{ opacity: 0, y: 300 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className='text_cont'>
-          <h1 className='c_heading'>Contact</h1>
+          <h1 className='sectionTitle'>Contact</h1>
 
           <p className='c_text'>
             I am actively seeking opportunities in frontend development. If you have any openings, I would greatly appreciate it if you could reach out to me.
@@ -61,7 +66,7 @@ const Contact = () => {
         <div className='flex-[0.5]'>
           <img className='contact_img' src='./images/contact.svg' alt='' />
         </div >
-      </div>
+      </motion.div>
     </div>
   );
 };
