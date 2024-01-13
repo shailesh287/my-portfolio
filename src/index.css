@@ -175,6 +175,18 @@ section h1 {
 .lds-ripple div:nth-child(2) {
   animation-delay: -0.5s;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 10px;
+}
+
+
 @keyframes lds-ripple {
   0% {
     top: 36px;

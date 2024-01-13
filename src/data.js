@@ -21,7 +21,7 @@ const projects = [
   },
   {
     id: nanoid(),
-    title: "Codwiz",
+    title: "Blog-App",
     img: "/images/projects/blog.png",
     desc: "Designed a stylish React blog app for a seamless and engaging front-end experience.",
     technologies: ["React.js", "Javascript", "Context"],

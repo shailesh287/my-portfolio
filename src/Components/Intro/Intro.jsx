@@ -11,7 +11,7 @@ const Intro = () => {
     <div >
        <Particle/>
       <motion.div
-      className='mainContainer'
+      className='mainContainer h-[450px]'
         initial={{ opacity: 0, y: 300 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -23,7 +23,7 @@ const Intro = () => {
             <h1 className='text-[#fff]'>Shailesh Bind</h1>
             <p className='title'>Frontend Developer</p>
             <p className='bio'>
-              Passionate about Technoloy and Startups | Life long learner
+            Enthusiastic about Innovation and Technology | Committed Lifelong Learner
             </p>
             <a className='highlightedLink' href={resume} target='_blank'>
               Download Resume <FiDownload />
