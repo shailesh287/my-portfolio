@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import { AppContextProvider } from "./Components/Context/AppContext";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact/Contact";
+import ErrorPage from "./Pages/ErrorPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -29,6 +30,7 @@ const appRouter = createBrowserRouter([
         element: <Contact />,
       },
     ],
+    errorElement: <ErrorPage />,
   },
 ]);
 root.render(
