@@ -28,6 +28,15 @@ const projects = [
     github: "https://github.com/shailesh287/react_blog_app",
     live: "https://react-blog-app-1.netlify.app",
   },
+  {
+    id: nanoid(),
+    title: "Form Generator",
+    img: "/images/projects/todo_List.png",
+    desc: "Effortlessly organize tasks with this JavaScript Todo List.",
+    technologies: ["Javascript", "HTML", "CSS"],
+    github: "https://github.com/shailesh287/todo-app-js",
+    live: "https://shailesh287.github.io/todo-app-js/",
+  },
 ];
 
 const skills = [

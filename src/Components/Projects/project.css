@@ -22,6 +22,7 @@
     backdrop-filter: blur(22px);
     border-radius: 6px;
     overflow: hidden;
+    border: 1px solid var(--border-color);
   }
   
   /* CardImg */
