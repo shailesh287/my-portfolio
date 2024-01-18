@@ -62,12 +62,21 @@ const Header = () => {
               Shailesh.Dev
             </span>
           </NavLink>
-          <button
-            className="mobileMenu"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <IoMdClose /> : <HiOutlineMenuAlt3 />}
-          </button>
+
+          <div className="md:hidden flex ">
+            <div
+              className="toggle cursor-pointer mx-8"
+              onClick={handleThemeToggle}
+            >
+              {theme === "light" ? <BsSun /> : <BsMoon />}
+            </div>
+            <button
+              className="mobileMenu"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <IoMdClose /> : <HiOutlineMenuAlt3 />}
+            </button>
+          </div>
           <nav
             className={`mobile_nav ${mobileMenuOpen ? "open" : ""}`}
             ref={mobileMenuRef}
